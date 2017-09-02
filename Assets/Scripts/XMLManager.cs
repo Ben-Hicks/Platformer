@@ -5,6 +5,14 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
 
+
+/* CURRENT PROBLEMS
+ *  Platform starting locations are always 0,0 which makes sense as coded
+ *  need some other way to store initial position nicely
+ * I'm also not really even sure if it's worht having XML saving
+ * - might just try to mess around with Scene transitions
+ */
+
 public class XMLManager : MonoBehaviour {
 
 	//bad singleton pattern
@@ -17,27 +25,37 @@ public class XMLManager : MonoBehaviour {
 		if(shouldLoad)LoadItems ();
 	}
 
-	public BlockDatabase blockDB;
+	public XMLDatabase xmlDB;
 
 	public void SaveBlocks(){
 		XMLBlock[] blocks= Object.FindObjectsOfType<XMLBlock>();
 		foreach(XMLBlock block in blocks){
 			BlockEntry be = new BlockEntry (block.transform.position, block.transform.localScale);
-			inst.blockDB.listBlock.Add (be);
+			inst.xmlDB.listBlock.Add (be);
+		}
+			
+		XMLPlatform[] platforms= Object.FindObjectsOfType<XMLPlatform>();
+		foreach(XMLPlatform platform in platforms){
+			//not sure if this works
+			PlatformController pc = platform.GetComponent<PlatformController> ();
+			PlatformEntry pe = new PlatformEntry (platform.transform.localScale,
+				                   pc.localWaypoints, pc.speed, pc.cyclic, pc.easeAmount, pc.waitTime);
+			inst.xmlDB.listPlatform.Add (pe);
 		}
 
-		XmlSerializer serializer = new XmlSerializer (typeof(BlockDatabase));
+
+		XmlSerializer serializer = new XmlSerializer (typeof(XMLDatabase));
 		FileStream fstream = new FileStream (Application.dataPath + "/StreamingAssets/XML/" + path, 
 			FileMode.Create);
-		serializer.Serialize (fstream, blockDB);
+		serializer.Serialize (fstream, xmlDB);
 		fstream.Close ();
 	}
 
 	public void LoadItems(){
-		XmlSerializer serializer = new XmlSerializer (typeof(BlockDatabase));
+		XmlSerializer serializer = new XmlSerializer (typeof(XMLDatabase));
 		FileStream fstream = new FileStream (Application.dataPath + "/StreamingAssets/XML/" + path, 
 			FileMode.Open);
-		blockDB = serializer.Deserialize (fstream) as BlockDatabase;
+		xmlDB = serializer.Deserialize (fstream) as XMLDatabase;
 		fstream.Close ();
 	}
 }
@@ -53,13 +71,36 @@ public class BlockEntry{
 	}
 }
 
+[System.Serializable]
+public class PlatformEntry{
+	public Vector3 size;
+	public Vector3[] waypoints;
+	public float speed;
+	public bool cyclic;
+	public float easeAmount;
+	public float waitTime;
+	public PlatformEntry(){}
+	public PlatformEntry(Vector3 _size, Vector3[] _waypoints,
+		float _speed, bool _cyclic, float _easeAmount, float _waitTime){
+		size = _size;
+		waypoints = _waypoints;
+		speed = _speed;
+		cyclic = _cyclic;
+		easeAmount = _easeAmount;
+		waitTime = _waitTime;
+	}
+}
+
 //probably do a seperate one for moving platforms
 //then a seperate one for enemies
 
 [System.Serializable]
-public class BlockDatabase{
+public class XMLDatabase{
 
 	[XmlArray("Blocks")]
 	public HashSet<BlockEntry> listBlock = new HashSet<BlockEntry>();
+
+	[XmlArray("Platforms")]
+	public HashSet<PlatformEntry> listPlatform = new HashSet<PlatformEntry>();
 
 }

@@ -44,13 +44,31 @@ public class PlatformController : RaycastController {
 		}
 	}
 
-	public override void Start () {
-		base.Start ();
+	public void Initiallize(Vector3 _size, Vector3[] _waypoints,
+		float _speed, bool _cyclic, float _easeAmount, float _waitTime){
 
+		this.transform.localScale = _size;
+		localWaypoints = _waypoints;
+		speed = _speed;
+		cyclic = _cyclic;
+		easeAmount = _easeAmount;
+		waitTime = _waitTime;
+
+		GenGlobalWaypoints ();
+		this.transform.position = globalWaypoints [0];
+	}
+
+	void GenGlobalWaypoints(){
 		globalWaypoints = new Vector3[localWaypoints.Length];
 		for (int i = 0; i < localWaypoints.Length; i++) {
 			globalWaypoints [i] = localWaypoints [i] + transform.position;
 		}
+	}
+
+	public override void Start () {
+		base.Start ();
+
+		GenGlobalWaypoints ();
 	}
 	
 	// Update is called once per frame

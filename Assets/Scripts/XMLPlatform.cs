@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class XMLPlatform : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	public void Initiallize(PlatformEntry p){
+		PlatformController pc = GetComponent<PlatformController> ();
+		pc.Initiallize (p.size, p.waypoints,
+			p.speed, p.cyclic, p.easeAmount, p.waitTime);
+
 	}
 }

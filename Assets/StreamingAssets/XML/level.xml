@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="Windows-1252"?>
-<BlockDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<XMLDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Blocks>
+    <BlockEntry>
+      <position>
+        <x>9.08</x>
+        <y>8.79</y>
+        <z>0</z>
+      </position>
+      <size>
+        <x>4.94001</x>
+        <y>0.78089</y>
+        <z>1</z>
+      </size>
+    </BlockEntry>
     <BlockEntry>
       <position>
         <x>58.1</x>
@@ -8,116 +20,8 @@
         <z>0</z>
       </position>
       <size>
-        <x>6.20980072</x>
-        <y>0.9622909</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>58.1</x>
-        <y>-3.2</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>6.20980072</x>
-        <y>0.9622909</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>58.07</x>
-        <y>-11.06</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>6.20980072</x>
-        <y>0.431093365</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>55.61</x>
-        <y>-14.14</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>15.8893223</x>
-        <y>1.75927949</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>64.44</x>
-        <y>-5.54</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>2.6633153</x>
-        <y>18.92763</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>49.01</x>
-        <y>-4.84</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>2.6633153</x>
-        <y>19.0564442</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>13.78</x>
-        <y>38.27</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>3.52756262</x>
-        <y>1.11411631</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>2.43</x>
-        <y>37.05</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>3.52756262</x>
-        <y>1.11411631</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>8.86</x>
-        <y>33.51</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>3.52756262</x>
-        <y>1.11411631</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>24.23</x>
-        <y>33.85</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>17.7236023</x>
-        <y>9.967483</y>
+        <x>6.2098</x>
+        <y>0.96229</y>
         <z>1</z>
       </size>
     </BlockEntry>
@@ -128,20 +32,8 @@
         <z>0</z>
       </position>
       <size>
-        <x>6.20980072</x>
-        <y>0.9622909</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>15.04</x>
-        <y>23.45</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>16.22504</x>
-        <y>4.244457</y>
+        <x>6.2098</x>
+        <y>0.96229</y>
         <z>1</z>
       </size>
     </BlockEntry>
@@ -152,128 +44,8 @@
         <z>0</z>
       </position>
       <size>
-        <x>16.1464024</x>
-        <y>4.00854063</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>32.85</x>
-        <y>27.16</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>42.112114</x>
-        <y>3.50083113</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>36.8</x>
-        <y>15.15</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>6.20980072</x>
-        <y>0.9622909</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>-7.3</x>
-        <y>12.66</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>2.54329085</x>
-        <y>5.85605</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>-5.39</x>
-        <y>21.88</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>6.296737</x>
-        <y>13.4784384</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>23.72</x>
-        <y>12.18</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>6.20980072</x>
-        <y>0.9622909</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>36.11</x>
-        <y>8.21</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>13.4052935</x>
-        <y>1.8692863</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>33.956</x>
-        <y>5.1</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>32.77331</x>
-        <y>4.40848637</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>8.89</x>
-        <y>1.19</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>4.9400053</x>
-        <y>0.7808913</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>9.08</x>
-        <y>8.79</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>4.9400053</x>
-        <y>0.7808913</y>
-        <z>1</z>
-      </size>
-    </BlockEntry>
-    <BlockEntry>
-      <position>
-        <x>-0.26</x>
-        <y>4.78</y>
-        <z>0</z>
-      </position>
-      <size>
-        <x>4.144763</x>
-        <y>0.7808913</y>
+        <x>16.1464</x>
+        <y>4.00853968</y>
         <z>1</z>
       </size>
     </BlockEntry>
@@ -284,20 +56,116 @@
         <z>0</z>
       </position>
       <size>
-        <x>6.296737</x>
-        <y>13.4784384</y>
+        <x>6.29674</x>
+        <y>13.4784393</y>
         <z>1</z>
       </size>
     </BlockEntry>
     <BlockEntry>
       <position>
-        <x>14.49</x>
-        <y>3.23</y>
+        <x>58.07</x>
+        <y>-11.06</y>
         <z>0</z>
       </position>
       <size>
-        <x>6.296737</x>
-        <y>13.4784384</y>
+        <x>6.2098</x>
+        <y>0.43109</y>
+        <z>1</z>
+      </size>
+    </BlockEntry>
+    <BlockEntry>
+      <position>
+        <x>58.1</x>
+        <y>-3.2</y>
+        <z>0</z>
+      </position>
+      <size>
+        <x>6.2098</x>
+        <y>0.96229</y>
+        <z>1</z>
+      </size>
+    </BlockEntry>
+    <BlockEntry>
+      <position>
+        <x>8.89</x>
+        <y>1.19</y>
+        <z>0</z>
+      </position>
+      <size>
+        <x>4.94001</x>
+        <y>0.78089</y>
+        <z>1</z>
+      </size>
+    </BlockEntry>
+    <BlockEntry>
+      <position>
+        <x>-5.39</x>
+        <y>21.88</y>
+        <z>0</z>
+      </position>
+      <size>
+        <x>6.29674</x>
+        <y>13.4784393</y>
+        <z>1</z>
+      </size>
+    </BlockEntry>
+    <BlockEntry>
+      <position>
+        <x>-0.26</x>
+        <y>4.78</y>
+        <z>0</z>
+      </position>
+      <size>
+        <x>4.14476</x>
+        <y>0.78089</y>
+        <z>1</z>
+      </size>
+    </BlockEntry>
+    <BlockEntry>
+      <position>
+        <x>49.01</x>
+        <y>-4.84</y>
+        <z>0</z>
+      </position>
+      <size>
+        <x>2.66331983</x>
+        <y>19.05645</y>
+        <z>1</z>
+      </size>
+    </BlockEntry>
+    <BlockEntry>
+      <position>
+        <x>55.61</x>
+        <y>-14.14</y>
+        <z>0</z>
+      </position>
+      <size>
+        <x>15.8893194</x>
+        <y>1.75928</y>
+        <z>1</z>
+      </size>
+    </BlockEntry>
+    <BlockEntry>
+      <position>
+        <x>64.44</x>
+        <y>-5.54</y>
+        <z>0</z>
+      </position>
+      <size>
+        <x>2.66331983</x>
+        <y>18.92763</y>
+        <z>1</z>
+      </size>
+    </BlockEntry>
+    <BlockEntry>
+      <position>
+        <x>-7.3</x>
+        <y>12.66</y>
+        <z>0</z>
+      </position>
+      <size>
+        <x>2.54329</x>
+        <y>5.85605</y>
         <z>1</z>
       </size>
     </BlockEntry>
@@ -309,9 +177,126 @@
       </position>
       <size>
         <x>20</x>
-        <y>1.35213327</y>
+        <y>1.35212994</y>
+        <z>1</z>
+      </size>
+    </BlockEntry>
+    <BlockEntry>
+      <position>
+        <x>33.956</x>
+        <y>5.1</y>
+        <z>0</z>
+      </position>
+      <size>
+        <x>32.7733078</x>
+        <y>4.4084897</y>
+        <z>1</z>
+      </size>
+    </BlockEntry>
+    <BlockEntry>
+      <position>
+        <x>14.49</x>
+        <y>3.23</y>
+        <z>0</z>
+      </position>
+      <size>
+        <x>6.29674</x>
+        <y>13.4784393</y>
+        <z>1</z>
+      </size>
+    </BlockEntry>
+    <BlockEntry>
+      <position>
+        <x>36.11</x>
+        <y>8.21</y>
+        <z>0</z>
+      </position>
+      <size>
+        <x>13.40529</x>
+        <y>1.86929</y>
         <z>1</z>
       </size>
     </BlockEntry>
   </Blocks>
-</BlockDatabase>
+  <Platforms>
+    <PlatformEntry>
+      <size>
+        <x>4.14476</x>
+        <y>0.78089</y>
+        <z>1</z>
+      </size>
+      <waypoints>
+        <Vector3>
+          <x>0</x>
+          <y>0</y>
+          <z>0</z>
+        </Vector3>
+        <Vector3>
+          <x>0</x>
+          <y>8</y>
+          <z>0</z>
+        </Vector3>
+        <Vector3>
+          <x>10</x>
+          <y>8</y>
+          <z>0</z>
+        </Vector3>
+        <Vector3>
+          <x>10</x>
+          <y>0</y>
+          <z>0</z>
+        </Vector3>
+      </waypoints>
+      <speed>2</speed>
+      <cyclic>false</cyclic>
+      <easeAmount>1</easeAmount>
+      <waitTime>1</waitTime>
+    </PlatformEntry>
+    <PlatformEntry>
+      <size>
+        <x>4.14476</x>
+        <y>0.3954</y>
+        <z>1</z>
+      </size>
+      <waypoints>
+        <Vector3>
+          <x>0</x>
+          <y>0</y>
+          <z>0</z>
+        </Vector3>
+        <Vector3>
+          <x>0</x>
+          <y>13.5</y>
+          <z>0</z>
+        </Vector3>
+      </waypoints>
+      <speed>2</speed>
+      <cyclic>false</cyclic>
+      <easeAmount>0</easeAmount>
+      <waitTime>1</waitTime>
+    </PlatformEntry>
+    <PlatformEntry>
+      <size>
+        <x>4.14476</x>
+        <y>0.3954</y>
+        <z>1</z>
+      </size>
+      <waypoints>
+        <Vector3>
+          <x>0</x>
+          <y>13.5</y>
+          <z>0</z>
+        </Vector3>
+        <Vector3>
+          <x>0</x>
+          <y>-0.08</y>
+          <z>0</z>
+        </Vector3>
+      </waypoints>
+      <speed>2</speed>
+      <cyclic>false</cyclic>
+      <easeAmount>0</easeAmount>
+      <waitTime>1</waitTime>
+    </PlatformEntry>
+  </Platforms>
+</XMLDatabase>

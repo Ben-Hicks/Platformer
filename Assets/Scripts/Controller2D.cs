@@ -11,6 +11,13 @@ public class Controller2D : RaycastController {
 	float maxClimbAngle = 80.0f;
 	float maxDescendAngle = 75.0f;
 
+	public delegate void FuncHitHazard(Hazard hazard, Vector2 hitDir);
+	public FuncHitHazard HitHazard;
+	public FuncHitHazard HitHazardSevere;
+
+	public bool vulnerable = true;
+	public bool stunned = false;
+
 	public CollisionInfo collisions;
 
 	[HideInInspector]
@@ -90,6 +97,13 @@ public class Controller2D : RaycastController {
 
 				if (hit.distance == 0) {
 					continue;//ignore if you a platform is moving through you
+				}else if (hit.collider.tag == "Hazard" && vulnerable) {
+					//TODO: give hazards a hazard component that can dictate damage/behaviour on contact
+					//   would then pass along either that component or null
+					HitHazard (hit.collider.GetComponent<Hazard>(), Vector2.right * directionX);
+				} else if (hit.collider.tag == "HazardSevere" && vulnerable) {
+					HitHazardSevere (hit.collider.GetComponent<Hazard>(), Vector2.right * directionX);
+					return;
 				}
 
 				float slopeAngle = Vector2.Angle (hit.normal, Vector2.up);
@@ -136,7 +150,7 @@ public class Controller2D : RaycastController {
 
 			if (hit) {
 				if (hit.collider.tag == "Through") {
-					if (directionY == 1 || hit.distance ==0) {
+					if (directionY == 1 || hit.distance == 0) {
 						//moving up or stuck midway through the platform
 						continue;
 					}
@@ -148,6 +162,13 @@ public class Controller2D : RaycastController {
 						Invoke ("ResetFallingThroughPlatform", 0.5f);
 						continue;
 					}
+				} else if (hit.collider.tag == "Hazard" && vulnerable) {
+					//TODO: give hazards a hazard component that can dictate damage/behaviour on contact
+					//   would then pass along either that component or null
+					HitHazard (hit.collider.GetComponent<Hazard>(), Vector2.up * directionY);
+				} else if (hit.collider.tag == "HazardSevere" && vulnerable) {
+					HitHazardSevere (hit.collider.GetComponent<Hazard>(), Vector2.up * directionY);
+					return;
 				}
 
 				moveAmount.y = (hit.distance - skinWidth) * directionY; // move to the collision point
